@@ -1,0 +1,453 @@
+{'experiment_id': None, 'dataset': 'mnist20x20', 'tau': 10.0, 'seed': 0, 'batch_size': 100, 'learning_rate': 0.01, 'training_bit_count': 32, 'implementation': 'cuda', 'packbits_eval': False, 'compile_model': True, 'num_iterations': 200000, 'eval_freq': 1000, 'valid_set_size': 0.0, 'extensive_eval': False, 'connections': 'unique', 'architecture': 'randomly_connected', 'num_neurons': 8000, 'num_layers': 6, 'grad_factor': 1.0}
+total_num_neurons=40000
+total_num_weights=40000
+Sequential(
+  (0): Flatten(start_dim=1, end_dim=-1)
+  (1): LogicLayer(400, 8000, train)
+  (2): LogicLayer(8000, 8000, train)
+  (3): LogicLayer(8000, 8000, train)
+  (4): LogicLayer(8000, 8000, train)
+  (5): LogicLayer(8000, 8000, train)
+  (6): LogicLayer(8000, 8000, train)
+  (7): GroupSum(k=10, tau=10.0)
+)
+iteration 1000/200000
+{'train_acc_eval_mode': 0.9300999826192856, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9327999788522721, 'test_acc_train_mode': 0.9418999803066254}
+iteration 2000/200000
+{'train_acc_eval_mode': 0.9571999780337016, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9539999806880951, 'test_acc_train_mode': 0.9610999804735184}
+iteration 3000/200000
+{'train_acc_eval_mode': 0.9653666406869889, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9604999834299087, 'test_acc_train_mode': 0.9675999790430069}
+iteration 4000/200000
+{'train_acc_eval_mode': 0.9724499695499738, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9662999784946442, 'test_acc_train_mode': 0.9714999777078629}
+iteration 5000/200000
+{'train_acc_eval_mode': 0.97776663372914, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9702999794483185, 'test_acc_train_mode': 0.9741999769210815}
+iteration 6000/200000
+{'train_acc_eval_mode': 0.9805832994977633, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9712999790906907, 'test_acc_train_mode': 0.9741999751329422}
+iteration 7000/200000
+{'train_acc_eval_mode': 0.9824999673167865, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.971699977517128, 'test_acc_train_mode': 0.9747999763488769}
+iteration 8000/200000
+{'train_acc_eval_mode': 0.9845833012461662, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9723999786376953, 'test_acc_train_mode': 0.9756999754905701}
+iteration 9000/200000
+{'train_acc_eval_mode': 0.9863999670743943, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9725999754667282, 'test_acc_train_mode': 0.976399974822998}
+iteration 10000/200000
+{'train_acc_eval_mode': 0.9868333006898562, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9725999748706817, 'test_acc_train_mode': 0.9755999761819839}
+iteration 11000/200000
+{'train_acc_eval_mode': 0.9887166369954745, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9737999731302261, 'test_acc_train_mode': 0.9767999732494355}
+iteration 12000/200000
+{'train_acc_eval_mode': 0.9898333057761193, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9745999729633331, 'test_acc_train_mode': 0.9761999762058258}
+iteration 13000/200000
+{'train_acc_eval_mode': 0.9906333049138387, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9743999743461609, 'test_acc_train_mode': 0.9761999756097793}
+iteration 14000/200000
+{'train_acc_eval_mode': 0.9910999727249146, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9743999743461609, 'test_acc_train_mode': 0.9759999740123749}
+iteration 15000/200000
+{'train_acc_eval_mode': 0.9915666416287422, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9749999743700027, 'test_acc_train_mode': 0.9758999741077423}
+iteration 16000/200000
+{'train_acc_eval_mode': 0.9919833073019981, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9748999756574631, 'test_acc_train_mode': 0.9755999755859375}
+iteration 17000/200000
+{'train_acc_eval_mode': 0.9923833098014195, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9749999755620956, 'test_acc_train_mode': 0.976499975323677}
+iteration 18000/200000
+{'train_acc_eval_mode': 0.9922499749064445, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.974899976849556, 'test_acc_train_mode': 0.9762999755144119}
+iteration 19000/200000
+{'train_acc_eval_mode': 0.9932666450738907, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9753999763727188, 'test_acc_train_mode': 0.9766999751329422}
+iteration 20000/200000
+{'train_acc_eval_mode': 0.9929666436711947, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9752999770641327, 'test_acc_train_mode': 0.9761999756097793}
+iteration 21000/200000
+{'train_acc_eval_mode': 0.9934833102424939, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9745999777317047, 'test_acc_train_mode': 0.9760999757051468}
+iteration 22000/200000
+{'train_acc_eval_mode': 0.9937333112955093, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9750999760627747, 'test_acc_train_mode': 0.9766999763250351}
+iteration 23000/200000
+{'train_acc_eval_mode': 0.9935999774932861, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9745999765396118, 'test_acc_train_mode': 0.9767999768257141}
+iteration 24000/200000
+{'train_acc_eval_mode': 0.9940166454513868, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9751999771595001, 'test_acc_train_mode': 0.9769999754428863}
+iteration 25000/200000
+{'train_acc_eval_mode': 0.993983312745889, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9756999772787094, 'test_acc_train_mode': 0.9768999755382538}
+iteration 26000/200000
+{'train_acc_eval_mode': 0.994366645415624, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9751999759674073, 'test_acc_train_mode': 0.9767999750375748}
+iteration 27000/200000
+{'train_acc_eval_mode': 0.9945166466633478, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9758999770879746, 'test_acc_train_mode': 0.9768999761343002}
+iteration 28000/200000
+{'train_acc_eval_mode': 0.9947666469216346, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9757999765872956, 'test_acc_train_mode': 0.9769999766349793}
+iteration 29000/200000
+{'train_acc_eval_mode': 0.9950999811291694, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.975799977183342, 'test_acc_train_mode': 0.976399976015091}
+iteration 30000/200000
+{'train_acc_eval_mode': 0.9950833149751027, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9762999767065048, 'test_acc_train_mode': 0.976399976015091}
+iteration 31000/200000
+{'train_acc_eval_mode': 0.9953166498740514, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9753999775648117, 'test_acc_train_mode': 0.9766999745368957}
+iteration 32000/200000
+{'train_acc_eval_mode': 0.9951999821265538, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9761999762058258, 'test_acc_train_mode': 0.9766999757289887}
+iteration 33000/200000
+{'train_acc_eval_mode': 0.9952166485786438, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9762999767065048, 'test_acc_train_mode': 0.9766999751329422}
+iteration 34000/200000
+{'train_acc_eval_mode': 0.9953833158810933, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9763999736309051, 'test_acc_train_mode': 0.9766999751329422}
+iteration 35000/200000
+{'train_acc_eval_mode': 0.9953999817371368, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9753999751806259, 'test_acc_train_mode': 0.9762999761104584}
+iteration 36000/200000
+{'train_acc_eval_mode': 0.995649982492129, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9766999769210816, 'test_acc_train_mode': 0.9761999762058258}
+iteration 37000/200000
+{'train_acc_eval_mode': 0.995366648832957, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9762999743223191, 'test_acc_train_mode': 0.9761999762058258}
+iteration 38000/200000
+{'train_acc_eval_mode': 0.9956499820947647, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9754999750852584, 'test_acc_train_mode': 0.9762999755144119}
+iteration 39000/200000
+{'train_acc_eval_mode': 0.9954833153883617, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9757999753952027, 'test_acc_train_mode': 0.9760999757051468}
+iteration 40000/200000
+{'train_acc_eval_mode': 0.9954999830325445, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9758999758958816, 'test_acc_train_mode': 0.9761999762058258}
+iteration 41000/200000
+{'train_acc_eval_mode': 0.9955833159883817, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9755999755859375, 'test_acc_train_mode': 0.9761999744176865}
+iteration 42000/200000
+{'train_acc_eval_mode': 0.9955666491389275, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9757999747991561, 'test_acc_train_mode': 0.9759999752044678}
+iteration 43000/200000
+{'train_acc_eval_mode': 0.9955833157896996, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9756999754905701, 'test_acc_train_mode': 0.9761999750137329}
+iteration 44000/200000
+{'train_acc_eval_mode': 0.99579998254776, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9763999754190444, 'test_acc_train_mode': 0.9764999747276306}
+iteration 45000/200000
+{'train_acc_eval_mode': 0.9956499834855398, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9762999743223191, 'test_acc_train_mode': 0.9762999743223191}
+iteration 46000/200000
+{'train_acc_eval_mode': 0.9956499827901523, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9755999737977982, 'test_acc_train_mode': 0.9764999741315842}
+iteration 47000/200000
+{'train_acc_eval_mode': 0.9959166503945986, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9762999743223191, 'test_acc_train_mode': 0.9764999741315842}
+iteration 48000/200000
+{'train_acc_eval_mode': 0.9959833167990049, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9759999746084214, 'test_acc_train_mode': 0.9765999740362168}
+iteration 49000/200000
+{'train_acc_eval_mode': 0.995833316942056, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9759999746084214, 'test_acc_train_mode': 0.9763999742269516}
+iteration 50000/200000
+{'train_acc_eval_mode': 0.9960333171486855, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9762999737262725, 'test_acc_train_mode': 0.9765999746322632}
+iteration 51000/200000
+{'train_acc_eval_mode': 0.9959166499972344, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9759999722242355, 'test_acc_train_mode': 0.9765999740362168}
+iteration 52000/200000
+{'train_acc_eval_mode': 0.9959333167473475, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9767999750375748, 'test_acc_train_mode': 0.9765999740362168}
+iteration 53000/200000
+{'train_acc_eval_mode': 0.9960166511933009, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9765999728441238, 'test_acc_train_mode': 0.9764999735355377}
+iteration 54000/200000
+{'train_acc_eval_mode': 0.9960166506965955, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9770999735593796, 'test_acc_train_mode': 0.9765999734401702}
+iteration 55000/200000
+{'train_acc_eval_mode': 0.9959333178400993, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.976799972653389, 'test_acc_train_mode': 0.9762999737262725}
+iteration 56000/200000
+{'train_acc_eval_mode': 0.9961833190917969, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9764999735355377, 'test_acc_train_mode': 0.9765999746322632}
+iteration 57000/200000
+{'train_acc_eval_mode': 0.996133318444093, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9772999727725983, 'test_acc_train_mode': 0.9763999736309051}
+iteration 58000/200000
+{'train_acc_eval_mode': 0.9962666522463163, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9760999739170074, 'test_acc_train_mode': 0.9765999752283097}
+iteration 59000/200000
+{'train_acc_eval_mode': 0.9962166525920232, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9759999746084214, 'test_acc_train_mode': 0.9766999745368957}
+iteration 60000/200000
+{'train_acc_eval_mode': 0.9963499843080839, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9763999742269516, 'test_acc_train_mode': 0.9766999751329422}
+iteration 61000/200000
+{'train_acc_eval_mode': 0.9963666518529256, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9765999752283097, 'test_acc_train_mode': 0.9766999745368957}
+iteration 62000/200000
+{'train_acc_eval_mode': 0.9961833182970683, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9764999741315842, 'test_acc_train_mode': 0.9766999745368957}
+iteration 63000/200000
+{'train_acc_eval_mode': 0.9964166527986527, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9766999745368957, 'test_acc_train_mode': 0.9764999747276306}
+iteration 64000/200000
+{'train_acc_eval_mode': 0.9964666525522868, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9769999742507934, 'test_acc_train_mode': 0.9768999737501144}
+iteration 65000/200000
+{'train_acc_eval_mode': 0.9964999852577845, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9770999747514725, 'test_acc_train_mode': 0.9765999746322632}
+iteration 66000/200000
+{'train_acc_eval_mode': 0.996466651558876, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9769999742507934, 'test_acc_train_mode': 0.9766999733448029}
+iteration 67000/200000
+{'train_acc_eval_mode': 0.9965999869505564, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9765999746322632, 'test_acc_train_mode': 0.9765999734401702}
+iteration 68000/200000
+{'train_acc_eval_mode': 0.9964333198467891, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.977099974155426, 'test_acc_train_mode': 0.977099974155426}
+iteration 69000/200000
+{'train_acc_eval_mode': 0.9966499865055084, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9773999738693238, 'test_acc_train_mode': 0.976999973654747}
+iteration 70000/200000
+{'train_acc_eval_mode': 0.996716653307279, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9770999735593796, 'test_acc_train_mode': 0.9772999733686447}
+iteration 71000/200000
+{'train_acc_eval_mode': 0.9966333197553953, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9770999735593796, 'test_acc_train_mode': 0.9770999735593796}
+iteration 72000/200000
+{'train_acc_eval_mode': 0.9966333191593488, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.977099974155426, 'test_acc_train_mode': 0.9772999745607376}
+iteration 73000/200000
+{'train_acc_eval_mode': 0.9963999855518341, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9771999746561051, 'test_acc_train_mode': 0.9766999733448029}
+iteration 74000/200000
+{'train_acc_eval_mode': 0.9965333187580109, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.977099974155426, 'test_acc_train_mode': 0.976999973654747}
+iteration 75000/200000
+{'train_acc_eval_mode': 0.996733319958051, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.977299975156784, 'test_acc_train_mode': 0.9770999747514725}
+iteration 76000/200000
+{'train_acc_eval_mode': 0.996583318610986, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.976499975323677, 'test_acc_train_mode': 0.9765999740362168}
+iteration 77000/200000
+{'train_acc_eval_mode': 0.9965999865531922, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9772999745607376, 'test_acc_train_mode': 0.9770999735593796}
+iteration 78000/200000
+{'train_acc_eval_mode': 0.996716653307279, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9774999755620957, 'test_acc_train_mode': 0.976999973654747}
+iteration 79000/200000
+{'train_acc_eval_mode': 0.9965166526039442, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9771999740600585, 'test_acc_train_mode': 0.9771999740600585}
+iteration 80000/200000
+{'train_acc_eval_mode': 0.9967499868075053, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9773999732732773, 'test_acc_train_mode': 0.9773999738693238}
+iteration 81000/200000
+{'train_acc_eval_mode': 0.996683320303758, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9773999726772309, 'test_acc_train_mode': 0.9773999738693238}
+iteration 82000/200000
+{'train_acc_eval_mode': 0.9966833192110062, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9767999732494355, 'test_acc_train_mode': 0.9775999736785889}
+iteration 83000/200000
+{'train_acc_eval_mode': 0.9965166527032853, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9774999731779098, 'test_acc_train_mode': 0.976999973654747}
+iteration 84000/200000
+{'train_acc_eval_mode': 0.9967333194613457, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9771999752521515, 'test_acc_train_mode': 0.9772999733686447}
+iteration 85000/200000
+{'train_acc_eval_mode': 0.9966499861081441, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9768999743461609, 'test_acc_train_mode': 0.9776999723911285}
+iteration 86000/200000
+{'train_acc_eval_mode': 0.996766652961572, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.977599972486496, 'test_acc_train_mode': 0.977599972486496}
+iteration 87000/200000
+{'train_acc_eval_mode': 0.9967166523138682, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.977099974155426, 'test_acc_train_mode': 0.9773999732732773}
+iteration 88000/200000
+{'train_acc_eval_mode': 0.9968333199620247, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9773999726772309, 'test_acc_train_mode': 0.9775999736785889}
+iteration 89000/200000
+{'train_acc_eval_mode': 0.9968833201130232, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9769999730587006, 'test_acc_train_mode': 0.9774999725818634}
+iteration 90000/200000
+{'train_acc_eval_mode': 0.996899986565113, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9774999731779098, 'test_acc_train_mode': 0.9772999727725983}
+iteration 91000/200000
+{'train_acc_eval_mode': 0.996916653017203, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9771999722719192, 'test_acc_train_mode': 0.9772999727725983}
+iteration 92000/200000
+{'train_acc_eval_mode': 0.9969166536132494, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9778999710083007, 'test_acc_train_mode': 0.9771999722719192}
+iteration 93000/200000
+{'train_acc_eval_mode': 0.9968499864141146, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9772999721765518, 'test_acc_train_mode': 0.9774999725818634}
+iteration 94000/200000
+{'train_acc_eval_mode': 0.9969333207607269, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9773999720811843, 'test_acc_train_mode': 0.9777999728918075}
+iteration 95000/200000
+{'train_acc_eval_mode': 0.99684998691082, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9777999716997147, 'test_acc_train_mode': 0.9778999727964401}
+iteration 96000/200000
+{'train_acc_eval_mode': 0.9968999872605006, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9778999722003937, 'test_acc_train_mode': 0.9774999725818634}
+iteration 97000/200000
+{'train_acc_eval_mode': 0.9969499864180883, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.977599972486496, 'test_acc_train_mode': 0.9774999725818634}
+iteration 98000/200000
+{'train_acc_eval_mode': 0.9969499872128169, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9775999706983566, 'test_acc_train_mode': 0.9774999713897705}
+iteration 99000/200000
+{'train_acc_eval_mode': 0.9969999867677689, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9774999713897705, 'test_acc_train_mode': 0.9777999716997147}
+iteration 100000/200000
+{'train_acc_eval_mode': 0.9971333209673564, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9774999731779098, 'test_acc_train_mode': 0.9776999723911285}
+iteration 101000/200000
+{'train_acc_eval_mode': 0.9970333209633827, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9776999723911285, 'test_acc_train_mode': 0.9777999722957611}
+iteration 102000/200000
+{'train_acc_eval_mode': 0.9970166546106338, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9774999725818634, 'test_acc_train_mode': 0.9777999722957611}
+iteration 103000/200000
+{'train_acc_eval_mode': 0.9970333207647005, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9775999736785889, 'test_acc_train_mode': 0.977599972486496}
+iteration 104000/200000
+{'train_acc_eval_mode': 0.9969833207130432, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9775999730825424, 'test_acc_train_mode': 0.9772999721765518}
+iteration 105000/200000
+{'train_acc_eval_mode': 0.9971499885121982, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.977799973487854, 'test_acc_train_mode': 0.9773999726772309}
+iteration 106000/200000
+{'train_acc_eval_mode': 0.9970166539152463, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9772999727725983, 'test_acc_train_mode': 0.9776999723911285}
+iteration 107000/200000
+{'train_acc_eval_mode': 0.997033321261406, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9775999736785889, 'test_acc_train_mode': 0.977599972486496}
+iteration 108000/200000
+{'train_acc_eval_mode': 0.9970499876141549, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9771999740600585, 'test_acc_train_mode': 0.9774999725818634}
+iteration 109000/200000
+{'train_acc_eval_mode': 0.9970166543126107, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9769999742507934, 'test_acc_train_mode': 0.9771999728679657}
+iteration 110000/200000
+{'train_acc_eval_mode': 0.9969333204627037, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9769999730587006, 'test_acc_train_mode': 0.9769999730587006}
+iteration 111000/200000
+{'train_acc_eval_mode': 0.9969166538119316, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9767999738454819, 'test_acc_train_mode': 0.9769999730587006}
+iteration 112000/200000
+{'train_acc_eval_mode': 0.9970166540145874, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9763999730348587, 'test_acc_train_mode': 0.9767999732494355}
+iteration 113000/200000
+{'train_acc_eval_mode': 0.9970499873161316, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9770999729633332, 'test_acc_train_mode': 0.9767999732494355}
+iteration 114000/200000
+{'train_acc_eval_mode': 0.997033321261406, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9764999741315842, 'test_acc_train_mode': 0.9769999730587006}
+iteration 115000/200000
+{'train_acc_eval_mode': 0.9969333202640216, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9770999723672866, 'test_acc_train_mode': 0.9767999732494355}
+iteration 116000/200000
+{'train_acc_eval_mode': 0.9966499868035317, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9765999728441238, 'test_acc_train_mode': 0.9765999734401702}
+iteration 117000/200000
+{'train_acc_eval_mode': 0.997033321261406, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.976799972653389, 'test_acc_train_mode': 0.9767999732494355}
+iteration 118000/200000
+{'train_acc_eval_mode': 0.9969999867677689, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9768999719619751, 'test_acc_train_mode': 0.9767999732494355}
+iteration 119000/200000
+{'train_acc_eval_mode': 0.9968999866644541, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9763999718427658, 'test_acc_train_mode': 0.9767999732494355}
+iteration 120000/200000
+{'train_acc_eval_mode': 0.9970999878644943, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9766999727487564, 'test_acc_train_mode': 0.9769999730587006}
+iteration 121000/200000
+{'train_acc_eval_mode': 0.9968999862670899, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9769999730587006, 'test_acc_train_mode': 0.976899973154068}
+iteration 122000/200000
+{'train_acc_eval_mode': 0.9969499871134758, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.976799972653389, 'test_acc_train_mode': 0.9769999730587006}
+iteration 123000/200000
+{'train_acc_eval_mode': 0.9969999878605207, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9765999722480774, 'test_acc_train_mode': 0.9767999732494355}
+iteration 124000/200000
+{'train_acc_eval_mode': 0.9969166534145674, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9763999730348587, 'test_acc_train_mode': 0.976799972653389}
+iteration 125000/200000
+{'train_acc_eval_mode': 0.9968999862670899, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9766999727487564, 'test_acc_train_mode': 0.9766999727487564}
+iteration 126000/200000
+{'train_acc_eval_mode': 0.996833320359389, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9762999725341797, 'test_acc_train_mode': 0.9766999727487564}
+iteration 127000/200000
+{'train_acc_eval_mode': 0.9969333209594091, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9762999743223191, 'test_acc_train_mode': 0.9767999732494355}
+iteration 128000/200000
+{'train_acc_eval_mode': 0.9969666534662247, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9765999734401702, 'test_acc_train_mode': 0.9762999731302261}
+iteration 129000/200000
+{'train_acc_eval_mode': 0.996766652961572, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9765999734401702, 'test_acc_train_mode': 0.9765999734401702}
+iteration 130000/200000
+{'train_acc_eval_mode': 0.9968166532119115, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9762999725341797, 'test_acc_train_mode': 0.9764999729394913}
+iteration 131000/200000
+{'train_acc_eval_mode': 0.9969166537125905, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9764999729394913, 'test_acc_train_mode': 0.9763999730348587}
+iteration 132000/200000
+{'train_acc_eval_mode': 0.9968666540582974, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9764999735355377, 'test_acc_train_mode': 0.9764999729394913}
+iteration 133000/200000
+{'train_acc_eval_mode': 0.9968666537602743, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.976099973320961, 'test_acc_train_mode': 0.9765999728441238}
+iteration 134000/200000
+{'train_acc_eval_mode': 0.9969166539112727, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9762999731302261, 'test_acc_train_mode': 0.9767999732494355}
+iteration 135000/200000
+{'train_acc_eval_mode': 0.9970333207647005, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9755999737977982, 'test_acc_train_mode': 0.9764999729394913}
+iteration 136000/200000
+{'train_acc_eval_mode': 0.99696665396293, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9759999740123749, 'test_acc_train_mode': 0.9763999730348587}
+iteration 137000/200000
+{'train_acc_eval_mode': 0.9970333209633827, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9760999739170074, 'test_acc_train_mode': 0.9764999729394913}
+iteration 138000/200000
+{'train_acc_eval_mode': 0.9971333207686742, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9762999743223191, 'test_acc_train_mode': 0.9765999728441238}
+iteration 139000/200000
+{'train_acc_eval_mode': 0.997016654809316, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9753999739885331, 'test_acc_train_mode': 0.9765999728441238}
+iteration 140000/200000
+{'train_acc_eval_mode': 0.9969333197673161, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9766999733448029, 'test_acc_train_mode': 0.976799972653389}
+iteration 141000/200000
+{'train_acc_eval_mode': 0.9969999865690867, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9755999737977982, 'test_acc_train_mode': 0.9764999729394913}
+iteration 142000/200000
+{'train_acc_eval_mode': 0.9969666531682014, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.975499974489212, 'test_acc_train_mode': 0.9762999731302261}
+iteration 143000/200000
+{'train_acc_eval_mode': 0.9968166532119115, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9759999740123749, 'test_acc_train_mode': 0.9764999729394913}
+iteration 144000/200000
+{'train_acc_eval_mode': 0.9968833202123641, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9756999742984772, 'test_acc_train_mode': 0.9762999731302261}
+iteration 145000/200000
+{'train_acc_eval_mode': 0.9967666524648666, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9758999741077423, 'test_acc_train_mode': 0.9766999727487564}
+iteration 146000/200000
+{'train_acc_eval_mode': 0.9969666540622711, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9762999731302261, 'test_acc_train_mode': 0.9766999727487564}
+iteration 147000/200000
+{'train_acc_eval_mode': 0.9968166531125704, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9763999730348587, 'test_acc_train_mode': 0.9766999727487564}
+iteration 148000/200000
+{'train_acc_eval_mode': 0.9969166534145674, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9769999730587006, 'test_acc_train_mode': 0.9766999727487564}
+iteration 149000/200000
+{'train_acc_eval_mode': 0.9968999875585238, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9757999736070633, 'test_acc_train_mode': 0.9765999728441238}
+iteration 150000/200000
+{'train_acc_eval_mode': 0.9969999877611796, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9766999727487564, 'test_acc_train_mode': 0.9766999727487564}
+iteration 151000/200000
+{'train_acc_eval_mode': 0.9968833207090696, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9768999725580215, 'test_acc_train_mode': 0.9769999724626541}
+iteration 152000/200000
+{'train_acc_eval_mode': 0.9970833216110865, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9767999732494355, 'test_acc_train_mode': 0.9765999728441238}
+iteration 153000/200000
+{'train_acc_eval_mode': 0.9970166537165642, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9765999734401702, 'test_acc_train_mode': 0.9769999724626541}
+iteration 154000/200000
+{'train_acc_eval_mode': 0.9968166527152061, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9766999727487564, 'test_acc_train_mode': 0.9766999727487564}
+iteration 155000/200000
+{'train_acc_eval_mode': 0.9968666533629099, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9764999729394913, 'test_acc_train_mode': 0.9770999723672866}
+iteration 156000/200000
+{'train_acc_eval_mode': 0.9968499875068665, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9767999732494355, 'test_acc_train_mode': 0.9768999719619751}
+iteration 157000/200000
+{'train_acc_eval_mode': 0.99696665396293, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9768999725580215, 'test_acc_train_mode': 0.9769999724626541}
+iteration 158000/200000
+{'train_acc_eval_mode': 0.9969666537642479, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9762999737262725, 'test_acc_train_mode': 0.9771999722719192}
+iteration 159000/200000
+{'train_acc_eval_mode': 0.9970166541139285, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9758999735116959, 'test_acc_train_mode': 0.976799972653389}
+iteration 160000/200000
+{'train_acc_eval_mode': 0.9969333199659983, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9770999729633332, 'test_acc_train_mode': 0.9770999723672866}
+iteration 161000/200000
+{'train_acc_eval_mode': 0.9968499874075254, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9765999722480774, 'test_acc_train_mode': 0.9769999724626541}
+iteration 162000/200000
+{'train_acc_eval_mode': 0.996999988158544, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9767999720573425, 'test_acc_train_mode': 0.9772999721765518}
+iteration 163000/200000
+{'train_acc_eval_mode': 0.9970333206653595, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9763999730348587, 'test_acc_train_mode': 0.9769999730587006}
+iteration 164000/200000
+{'train_acc_eval_mode': 0.9969333203633627, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9770999723672866, 'test_acc_train_mode': 0.9770999729633332}
+iteration 165000/200000
+{'train_acc_eval_mode': 0.9970499875148138, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9767999720573425, 'test_acc_train_mode': 0.9769999730587006}
+iteration 166000/200000
+{'train_acc_eval_mode': 0.9969333204627037, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.976799972653389, 'test_acc_train_mode': 0.9773999714851379}
+iteration 167000/200000
+{'train_acc_eval_mode': 0.9970833213130633, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9761999732255936, 'test_acc_train_mode': 0.976799972653389}
+iteration 168000/200000
+{'train_acc_eval_mode': 0.9970499876141549, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9770999717712402, 'test_acc_train_mode': 0.9771999722719192}
+iteration 169000/200000
+{'train_acc_eval_mode': 0.9970166541139285, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9767999720573425, 'test_acc_train_mode': 0.9770999723672866}
+iteration 170000/200000
+{'train_acc_eval_mode': 0.9969999871651332, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9761999720335006, 'test_acc_train_mode': 0.9769999724626541}
+iteration 171000/200000
+{'train_acc_eval_mode': 0.9971333210666974, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9765999728441238, 'test_acc_train_mode': 0.976899973154068}
+iteration 172000/200000
+{'train_acc_eval_mode': 0.99708332101504, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9764999729394913, 'test_acc_train_mode': 0.9766999727487564}
+iteration 173000/200000
+{'train_acc_eval_mode': 0.9971499879161517, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9773999732732773, 'test_acc_train_mode': 0.9771999722719192}
+iteration 174000/200000
+{'train_acc_eval_mode': 0.9971833221117655, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9771999722719192, 'test_acc_train_mode': 0.9766999727487564}
+iteration 175000/200000
+{'train_acc_eval_mode': 0.9970833206176758, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9769999724626541, 'test_acc_train_mode': 0.9769999724626541}
+iteration 176000/200000
+{'train_acc_eval_mode': 0.9970166543126107, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9759999734163284, 'test_acc_train_mode': 0.976799972653389}
+iteration 177000/200000
+{'train_acc_eval_mode': 0.9970499874154727, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9770999723672866, 'test_acc_train_mode': 0.9768999725580215}
+iteration 178000/200000
+{'train_acc_eval_mode': 0.9970999881625175, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9766999727487564, 'test_acc_train_mode': 0.9766999727487564}
+iteration 179000/200000
+{'train_acc_eval_mode': 0.9970666548609733, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9765999728441238, 'test_acc_train_mode': 0.9768999725580215}
+iteration 180000/200000
+{'train_acc_eval_mode': 0.996966653863589, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9766999733448029, 'test_acc_train_mode': 0.976799972653389}
+iteration 181000/200000
+{'train_acc_eval_mode': 0.9970333206653595, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9763999724388123, 'test_acc_train_mode': 0.9770999729633332}
+iteration 182000/200000
+{'train_acc_eval_mode': 0.9969666541616122, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9764999723434449, 'test_acc_train_mode': 0.9765999722480774}
+iteration 183000/200000
+{'train_acc_eval_mode': 0.9969499877095223, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9767999720573425, 'test_acc_train_mode': 0.9768999725580215}
+iteration 184000/200000
+{'train_acc_eval_mode': 0.9970666537682216, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9760999727249146, 'test_acc_train_mode': 0.9769999724626541}
+iteration 185000/200000
+{'train_acc_eval_mode': 0.9970666540662447, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9759999722242355, 'test_acc_train_mode': 0.976799972653389}
+iteration 186000/200000
+{'train_acc_eval_mode': 0.9968666532635688, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9764999723434449, 'test_acc_train_mode': 0.9768999725580215}
+iteration 187000/200000
+{'train_acc_eval_mode': 0.9970166540145874, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.976799972653389, 'test_acc_train_mode': 0.9769999724626541}
+iteration 188000/200000
+{'train_acc_eval_mode': 0.9970666551589966, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9764999717473983, 'test_acc_train_mode': 0.9767999720573425}
+iteration 189000/200000
+{'train_acc_eval_mode': 0.9969666540622711, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9768999719619751, 'test_acc_train_mode': 0.9765999728441238}
+iteration 190000/200000
+{'train_acc_eval_mode': 0.9969999868671099, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.976799971461296, 'test_acc_train_mode': 0.9769999730587006}
+iteration 191000/200000
+{'train_acc_eval_mode': 0.9969333204627037, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9765999722480774, 'test_acc_train_mode': 0.9761999726295472}
+iteration 192000/200000
+{'train_acc_eval_mode': 0.9970166539152463, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9771999728679657, 'test_acc_train_mode': 0.9763999730348587}
+iteration 193000/200000
+{'train_acc_eval_mode': 0.9969833209117254, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.97669997215271, 'test_acc_train_mode': 0.9763999730348587}
+iteration 194000/200000
+{'train_acc_eval_mode': 0.9970166549086571, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9767999720573425, 'test_acc_train_mode': 0.9766999727487564}
+iteration 195000/200000
+{'train_acc_eval_mode': 0.9969499869147936, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9770999723672866, 'test_acc_train_mode': 0.9767999732494355}
+iteration 196000/200000
+{'train_acc_eval_mode': 0.9969999873638153, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9767999732494355, 'test_acc_train_mode': 0.9764999729394913}
+iteration 197000/200000
+{'train_acc_eval_mode': 0.9969833203156789, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9768999725580215, 'test_acc_train_mode': 0.9766999733448029}
+iteration 198000/200000
+{'train_acc_eval_mode': 0.9969666540622711, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.976799972653389, 'test_acc_train_mode': 0.9764999729394913}
+iteration 199000/200000
+{'train_acc_eval_mode': 0.9969333211580912, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9765999728441238, 'test_acc_train_mode': 0.9764999729394913}
+iteration 200000/200000
+{'train_acc_eval_mode': 0.9969833208123843, 'train_acc_train_mode': -1, 'valid_acc_eval_mode': -1, 'valid_acc_train_mode': -1, 'test_acc_eval_mode': 0.9764999729394913, 'test_acc_train_mode': 0.9762999725341797}
+
+================================================================================
+ Converting the model to C code and compiling it...
+================================================================================
+Skipping torch.nn.Flatten layer (<class 'torch.nn.modules.flatten.Flatten'>).
+Skipping GroupSum layer (<class 'difflogic.difflogic.GroupSum'>).
+`layers` created and has 6 layers.
+C code created and has 48062 lines. (temp location /tmp/tmp4e3shu6l.c)
+Compiling finished in 110.883 seconds.
+lib_file copied from /tmp/tmpki0sh_6p.so to lib/00000000_64.so .
+x.shape (10048, 400)
+out.shape torch.Size([10000, 10])
+COMPILED MODEL 64 tensor(0.9633)
+Skipping torch.nn.Flatten layer (<class 'torch.nn.modules.flatten.Flatten'>).
+Skipping GroupSum layer (<class 'difflogic.difflogic.GroupSum'>).
+`layers` created and has 6 layers.
+C code created and has 48062 lines. (temp location /tmp/tmpw6ma0_d4.c)
+Compiling finished in 108.060 seconds.
+lib_file copied from /tmp/tmp6ur1ini1.so to lib/00000000_64.so .
+x.shape (10048, 400)
+out.shape torch.Size([10000, 10])
+COMPILED MODEL 64 tensor(0.9633)
+Skipping torch.nn.Flatten layer (<class 'torch.nn.modules.flatten.Flatten'>).
+Skipping GroupSum layer (<class 'difflogic.difflogic.GroupSum'>).
+`layers` created and has 6 layers.
+C code created and has 48062 lines. (temp location /tmp/tmpd21zyc55.c)
+Compiling finished in 108.200 seconds.
+lib_file copied from /tmp/tmpkdjc__lt.so to lib/00000000_64.so .
+x.shape (10048, 400)
+out.shape torch.Size([10000, 10])
+COMPILED MODEL 64 tensor(0.9633)
+Skipping torch.nn.Flatten layer (<class 'torch.nn.modules.flatten.Flatten'>).
+Skipping GroupSum layer (<class 'difflogic.difflogic.GroupSum'>).
+`layers` created and has 6 layers.
+C code created and has 48062 lines. (temp location /tmp/tmpi7gbrlx7.c)
+Compiling finished in 118.334 seconds.
+lib_file copied from /tmp/tmp_cc06asz.so to lib/00000000_64.so .
+x.shape (10048, 400)
+out.shape torch.Size([10000, 10])
+COMPILED MODEL 64 tensor(0.9633)

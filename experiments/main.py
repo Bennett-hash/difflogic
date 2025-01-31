@@ -7,6 +7,7 @@ import numpy as np
 import torch
 import torchvision
 from tqdm import tqdm
+import sys
 
 from results_json import ResultsJSON
 
@@ -279,9 +280,10 @@ if __name__ == '__main__':
     best_acc = 0
 
     for i, (x, y) in tqdm(
-            enumerate(load_n(train_loader, args.num_iterations)),
-            desc='iteration',
-            total=args.num_iterations,
+        enumerate(load_n(train_loader, args.num_iterations)),
+        desc='iteration',
+        total=args.num_iterations,
+        disable=True,
     ):
         x = x.to(BITS_TO_TORCH_FLOATING_POINT_TYPE[args.training_bit_count]).to('cuda')
         y = y.to('cuda')
@@ -289,6 +291,8 @@ if __name__ == '__main__':
         loss = train(model, x, y, loss_fn, optim)
 
         if (i+1) % args.eval_freq == 0:
+            print(f"iteration {(i+1)}/{args.num_iterations}")
+
             if args.extensive_eval:
                 train_accuracy_train_mode = eval(model, train_loader, mode=True)
                 valid_accuracy_eval_mode = eval(model, validation_loader, mode=False)
