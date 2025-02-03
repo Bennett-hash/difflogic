@@ -98,17 +98,10 @@ def get_model(args):
     print(f'total_num_neurons={total_num_neurons}')
     total_num_weights = sum(map(lambda x: x.num_weights, logic_layers[1:-1]))
     print(f'total_num_weights={total_num_weights}')
-    if args.experiment_id is not None:
-        results.store_results({
-            'total_num_neurons': total_num_neurons,
-            'total_num_weights': total_num_weights,
-        })
 
     model = model.to('cuda')
 
     print(model)
-    if args.experiment_id is not None:
-        results.store_results({'model_str': str(model)})
 
     loss_fn = torch.nn.CrossEntropyLoss()
 
@@ -162,14 +155,8 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description='Train logic gate network on the various datasets.')
 
-    parser.add_argument('-eid', '--experiment_id', type=int, default=None)
-
     parser.add_argument('--dataset', type=str, choices=[
-        'adult', 'breast_cancer',
-        'monk1', 'monk2', 'monk3',
         'mnist', 'mnist20x20',
-        'cifar-10-3-thresholds',
-        'cifar-10-31-thresholds',
     ], required=True, help='the dataset to use')
     parser.add_argument('--tau', '-t', type=float, default=10, help='the softmax temperature tau')
     parser.add_argument('--seed', '-s', type=int, default=0, help='seed (default: 0)')
@@ -207,11 +194,6 @@ if __name__ == '__main__':
     assert args.num_iterations % args.eval_freq == 0, (
         f'iteration count ({args.num_iterations}) has to be divisible by evaluation frequency ({args.eval_freq})'
     )
-
-    if args.experiment_id is not None:
-        assert 520_000 <= args.experiment_id < 530_000, args.experiment_id
-        results = ResultsJSON(eid=args.experiment_id, path='./results/')
-        results.store_args(args)
 
     torch.manual_seed(args.seed)
     random.seed(args.seed)
@@ -259,20 +241,11 @@ if __name__ == '__main__':
                 r['valid_acc_eval'] = packbits_eval(model, train_loader)
                 r['test_acc_eval'] = packbits_eval(model, test_loader)
 
-            if args.experiment_id is not None:
-                results.store_results(r)
-            else:
-                print(r)
+            print(r)
 
             if valid_accuracy_eval_mode > best_acc:
                 best_acc = valid_accuracy_eval_mode
-                if args.experiment_id is not None:
-                    results.store_final_results(r)
-                else:
-                    print('IS THE BEST UNTIL NOW.')
-
-            if args.experiment_id is not None:
-                results.save()
+                print('IS THE BEST UNTIL NOW.')
 
     ####################################################################################################################
 
